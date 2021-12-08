@@ -17,7 +17,7 @@ def load():
         num = list(map(int, txt.read().split(',')))
         copy_num = copy.copy(num)
         messagebox.showinfo("Вставка файла", "Числа загружены")
-    except ValueError:
+    except ValueError and FileNotFoundError:
         messagebox.showinfo("Вставка файла", "Неправильный файл")
 
 
