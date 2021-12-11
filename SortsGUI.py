@@ -33,7 +33,6 @@ def output():
 
 def stop():
     root.destroy()
-    sys.exit()
 
 
 def mysort(choice):
